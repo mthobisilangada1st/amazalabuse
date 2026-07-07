@@ -403,8 +403,14 @@
   @media(min-width:480px){ .contact-row a.big-link{font-size:1.3rem;} }
   .contact-row .lbl{font-family:'Space Mono',monospace; font-size:0.72rem; color:var(--tan-light); letter-spacing:0.06em; text-transform:uppercase; display:block; margin-bottom:2px;}
 
+  .map-title{
+    font-family:'Space Mono',monospace;
+    font-size:0.78rem; letter-spacing:0.08em; text-transform:uppercase;
+    color:var(--gold-bright);
+    margin-top:36px; margin-bottom:12px;
+  }
+  .map-embed + .map-title{margin-top:28px;}
   .map-embed{
-    margin-top:36px;
     border:1px solid var(--line);
     overflow:hidden;
     height:260px;
@@ -679,15 +685,32 @@
             <a class="big-link" style="font-size:1.05rem;" href="https://www.google.com/maps/search/?api=1&query=-27.7628790,30.1803420" target="_blank" rel="noopener">Newcastle Goga Passage, Newcastle</a>
           </div>
         </div>
+        <div class="contact-row">
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div>
+            <span class="lbl">Osizweni Branch</span>
+            <a class="big-link" style="font-size:1.05rem;" href="https://www.google.com/maps/search/?api=1&query=-27.781111,30.129917" target="_blank" rel="noopener">5 Star, Osizweni, Newcastle 2952</a>
+          </div>
+        </div>
       </div>
     </div>
 
+    <div class="map-title">Newcastle Branch</div>
     <div class="map-embed">
       <iframe
         src="https://maps.google.com/maps?q=-27.7628790,30.1803420&z=15&output=embed"
         width="100%" height="100%" style="border:0;" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
         title="Amazalabuse Funeral Services location map"></iframe>
+    </div>
+
+    <div class="map-title">Osizweni Branch</div>
+    <div class="map-embed">
+      <iframe
+        src="https://maps.google.com/maps?q=-27.781111,30.129917&z=15&output=embed"
+        width="100%" height="100%" style="border:0;" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Amazalabuse Funeral Services Osizweni branch map"></iframe>
     </div>
   </div>
 </section>
